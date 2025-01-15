@@ -1,181 +1,80 @@
-footer{
+footer {
     width: 100%;
     background-color: black;
-    margin-top: 300px;
+    
 
-    .cuadronegro{
+    .cuadronegro {
         color: white;
         display: grid;
         width: 90%;
         margin: auto;
-        gap: 20px;
+       
 
-        .enlaces{
+        .enlaces {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            margin-top: 5px;
             font-size: 20px;
             color: grey;
 
-            .primera{
-                text-align: left;
-                align-self: self-end;
+            .primera {
+                
                 font-size: 20px;
                 line-height: 45px;
-                
+
 
             }
 
-            .segunda{
-                align-self: center;
+            .segunda {
                 font-size: 30px;
                 line-height: 45px;
-                
+
             }
 
-            .tercera{
-                align-self: self-end;
+            .tercera {
+                
                 font-size: 30px;
                 line-height: 45px;
 
-                #color{
+                #color {
                     color: white;
                 }
 
-                #separado{
-                    margin-top: 25px;
-                }
             }
 
-            .medio{
-                justify-self: center;
-            }
-
-            .ultima{
-                text-align: right;
-                align-self: self-end;
+            .ultima {
+                
                 font-size: 30px;
                 line-height: 45px;
 
-                #numero{
+                #numero {
                     font-size: 40px;
-                    margin-bottom: 20px;
                     color: white;
                 }
             }
 
-            ul{
-                li{
+            ul {
+                li {
                     list-style: none;
                 }
             }
         }
-        
-        .border{
-            border-top: solid 3px wheat;  
-        }
-
-        .Copyfoot{
-            font-size: 20px;
-            line-height: 45px;
-            margin: 20px 0;
-            text-align: center;
-              
-           
-           
-    } 
-}
-
-    .cuadrogris{
-        grid-template-columns: 1fr 1fr;
-        background-color: #444;
-        width: 87%;
-        height: 312px;
-        margin: auto;
-        transform:translateY(-50%);
-        display: grid;
-        /*padding: 50px;*/
-
-             
-        
-        .tipoemail{
-            p{
-                display: grid;
-                gap: 25px;
-                font-size: 20px;
-                line-height: 45px;
-                margin-left: 10%;
-                margin-top: 5%;
-                color: white;
-              
-
-            }
-            
-            input{
-                background-color: transparent;
-                border: solid 1px gray;
-                border-radius: 100px;
-                padding: 0px 60px;
-                line-height: 45px;
-                font-size: 20px;
-                display: grid;
-                justify-self: center;
-                width: 80%;
-
-            }
-
-            button{
-                background-color: transparent;
-                border: solid 1px #DF991B;
-                color: #DF991B;
-                border-radius: 100px;
-                padding: 10px;
-                font-size: 20px;
-                line-height: 45px;
-                width: 40%;
-                justify-self:end;
-                margin-top: 30px;
-                margin-left: 50%;
-                
-            }
-
-            
-        }
-
-        #textfooter{
-            display: grid;
-            font-size: 60px;
-            color: #FFFFFF;
-            justify-self: center;
-            margin-top: 10%;
-
-
-
-            span{
-                color: #DF991B;
-                font-size: 30px;
-            }
-        }
 
     }
+
 }
 
-@media (max-width: 1000px) {
-    footer{
+@media (max-width: 480px) {
+    footer {
 
-        .cuadrogris{
+        .cuadrogris {
             display: none
         }
-        
 
-    }
+        .cuadronegro {
 
-        .cuadronegro{
-            
-            .enlaces{
+            .enlaces {
                 grid-template-columns: repeat(2 1fr);
 
-                .medio{
+                .medio {
                     justify-self: baseline;
                     margin-top: 10px;
                     font-size: 18px;
@@ -183,12 +82,12 @@ footer{
                     color: #ddd;
                 }
 
-                .primera{
+                .primera {
                     grid-column: span 2;
 
                 }
 
-                .ultima{
+                .ultima {
                     text-align: left;
                     justify-self: baseline;
                     grid-column: span 2;
@@ -196,9 +95,156 @@ footer{
                 }
             }
 
-            .Copyfoot{
+            .Copyfoot {
                 display: none;
+            }
         }
+
     }
 
+
+}
+
+@media (min-width: 480px) and (max-width:1920px) {
+
+    footer {
+        
+        margin-top: 300px;
+    
+        .cuadronegro {
+            
+            gap: 20px;
+    
+            .enlaces {
+                
+                grid-template-columns: repeat(4, 1fr);
+                font-size: 20px;
+               
+    
+                .primera {
+                    text-align: left;
+                    align-self: self-end;
+                       
+    
+                }
+    
+                .segunda {
+                    align-self: center;
+                    
+                }
+    
+                .tercera {
+                    align-self: self-end;
+    
+                    #separado {
+                        margin-top: 25px;
+                    }
+                }
+    
+                .medio {
+                    justify-self: center;
+                }
+    
+                .ultima {
+                    text-align: right;
+                    align-self: self-end;
+
+    
+                    #numero {
+                        margin-bottom: 20px;
+                       
+                    }
+                }
+    
+                
+            }
+    
+            .border {
+                border-top: solid 3px wheat;
+            }
+    
+            .Copyfoot {
+                font-size: 20px;
+                line-height: 45px;
+                margin: 20px 0;
+                text-align: center;
+    
+    
+    
+            }
+        }
+    
+        .cuadrogris {
+            grid-template-columns: 1fr 1fr;
+            background-color: #444;
+            width: 87%;
+            height: 312px;
+            margin: auto;
+            transform: translateY(-50%);
+            display: grid;
+            /*padding: 50px;*/
+    
+    
+    
+            .tipoemail {
+                p {
+                    display: grid;
+                    gap: 25px;
+                    font-size: 20px;
+                    line-height: 45px;
+                    margin-left: 10%;
+                    margin-top: 5%;
+                    color: white;
+    
+    
+                }
+    
+                input {
+                    background-color: transparent;
+                    border: solid 1px gray;
+                    border-radius: 100px;
+                    padding: 0px 60px;
+                    line-height: 45px;
+                    font-size: 20px;
+                    display: grid;
+                    justify-self: center;
+                    width: 80%;
+    
+                }
+    
+                button {
+                    background-color: transparent;
+                    border: solid 1px #DF991B;
+                    color: #DF991B;
+                    border-radius: 100px;
+                    padding: 10px;
+                    font-size: 20px;
+                    line-height: 45px;
+                    width: 40%;
+                    justify-self: end;
+                    margin-top: 30px;
+                    margin-left: 50%;
+    
+                }
+    
+    
+            }
+    
+            #textfooter {
+                display: grid;
+                font-size: 60px;
+                color: #FFFFFF;
+                justify-self: center;
+                margin-top: 10%;
+    
+    
+    
+                span {
+                    color: #DF991B;
+                    font-size: 30px;
+                }
+            }
+    
+        }
+    }
 }

@@ -22,15 +22,28 @@
     height: 550px;
     margin-top: 70px;
     /*margin-bottom: 10%;*/
+
+    .contenedorfotos {
+            position: relative;
     
-}
-.paisciudad{
-    position: relative;
-    top: -119px;
-    height: 142px;
-    margin-left: 79px;
+            .paisciudad {
+                position: absolute;
+                width: 408px;
+                height: 145px;
+                transform: translateY(-100%);
+                
+                
+            }
+
+            .foto{
+                width: 407px;
+                height: 550px;
+                margin-left: 0px;
+            }
+        }
+
     
-    /*margin: 15px;*/
+
 }
 
 .pais{
@@ -55,10 +68,7 @@
     
 }
 
-.tamaños{
-   /*max-width: 95%;*/
-    height: 550px;
-}
+
 
 img:hover {
     border-width: 3px;

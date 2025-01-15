@@ -1,51 +1,55 @@
 /*seccion de redes sociales*/
 /*header e imagen de fonfo*/
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-#estilo{
-width: 100%;
-overflow-x: hidden;
+
+#estilo {
+    width: 100%;
+    overflow-x: hidden;
 }
-header{
+
+header {
     background-color: rgba(0, 0, 0, 0.3);
-   /* height: 130px;
+    /* height: 130px;
     padding-bottom: 60px;*/
     padding-top: 30px;
-    display:grid;
+    display: grid;
     grid-template-columns: 7fr 4fr;
     width: 100%;
-    position:fixed;
+    position: fixed;
     height: 100px;
 
-    .mascolor{
+    .mascolor {
         color: white;
         opacity: 0.7;
     }
 
 }
-#interno{
-    display:grid;
+
+#interno {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-    
+
 }
+
 p {
     color: gray;
     display: inline;
 }
 
-img{
+img {
     display: inline;
     align-self: auto;
     margin-left: 5%;
-    }
+}
 
-#imagenprincipal{
+#imagenprincipal {
 
     position: absolute;
     z-index: -1;
@@ -55,13 +59,14 @@ img{
     margin: 0;
     /*filter: brightness(0.5);*/
 }
-#titulosarriba{
+
+#titulosarriba {
     position: absolute;
     bottom: 50px;
     margin-left: 5vw;
 }
 
-#contenedor{
+#contenedor {
     display: grid;
     height: 100vh;
 
@@ -82,13 +87,13 @@ img{
     filter:;
     padding: 100px;/*
     /*position: relative;*/
-   
+
 
 }
 
-/* falta posicionamiento de los elementos dentro de las columnas*/ 
+/* falta posicionamiento de los elementos dentro de las columnas*/
 
-.eestilo{
+.eestilo {
     height: fit-content;
     margin-top: 150px;
     position: relative;
@@ -96,7 +101,7 @@ img{
 
 }
 
-#tipotext{
+#tipotext {
 
     background-color: transparent;
     height: 20%;
@@ -106,27 +111,28 @@ img{
     margin-left: 60%;
     margin-right: 20%;
     /*margin-top: -80px;*/
-    padding: 30px 24px;;
+    padding: 30px 24px;
+    ;
     font-size: 20px;
-    
 
-    &::placeholder{
-     font-size: 20px;
-     color: white;
+
+    &::placeholder {
+        font-size: 20px;
+        color: white;
     }
 
 }
- 
 
-#imagen{
-        position: absolute;
-        /*right: 0;
+
+#imagen {
+    position: absolute;
+    /*right: 0;
         left: 80%;*/
-        top: 50%;
-        transform:translateY(-50%);
-        cursor: pointer;
-        right: 55px;
-           
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    right: 55px;
+
 }
 
 
@@ -136,8 +142,8 @@ img{
     gap: 10px;
 }*/
 
-#lux{
-    color:gray;
+#lux {
+    color: gray;
     font-size: 50px;
     /*opacity: 80%;*/
     display: grid;
@@ -146,74 +152,63 @@ img{
     margin: 20px;
 }
 
-h1{
-color: white;
-font-size: 80px;
+h1 {
+    color: white;
+    font-size: 80px;
 }
 
-a{
-       border-radius: 70px;
-       border: solid 2px white;
-       text-decoration: none;
-       background-color: transparent;
-       padding: 20px;
-       color: white;
-       font-size: 25px;
-       width:370px;
-       display: grid;
-       grid-template-columns: 2fr 4fr;   
-       
+a {
+    border-radius: 70px;
+    border: solid 2px white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    width: 370px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+
 }
 
-#flechita{
+#flechita {
     margin: left: 10%;
-    
-   }
 
-#redes{
+}
+
+#redes {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 25px 25px 25px 25px 25px  30px ;
+    grid-template-rows: auto 25px 25px 25px 25px 25px 30px;
     width: 25px;
     justify-items: center;
     position: fixed;
     top: 50%;
     font-size: 30px;
-    
-    img{
-       display: block;
+
+    img {
+        display: block;
         margin-top: 25px;
     }
 
 
-    #rotate{
+    #rotate {
         margin-bottom: 13px;
-        display:inline;
-        transform:rotate(90deg)
-    
+        display: inline;
+        transform: rotate(90deg)
     }
 
     @media screen and (max-width: 1000px) {
-        header{
-                Display:grid;
-                grid-template-columns: 1fr;
+        header {
+            Display: grid;
+            grid-template-columns: 1fr;
 
-                #disapir{
-                    display: none;
-
-                }
+            #disapir {
+                display: none;
 
             }
-            
+
         }
+
+    }
 }
-
-
-
-   
-
-
-
-
-
-
