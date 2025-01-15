@@ -1,0 +1,71 @@
+/*Seccion 2 galeria  */
+
+@font-face {
+    font-family: "Regal Display Pro";
+    src: url("../fonts/fonts/PFRegalDisplayPro-Regular.eot") 
+  }
+
+h4{
+    font-size: 40px;
+    line-height: 45px;
+    color: #df991b;
+    text-align: center;
+}
+
+h3{
+    font-size: 80px;
+    line-height: 45px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Regal Display Pro";
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 1%;
+    padding-right: 100px;
+    padding-left: 70px;
+img{
+    
+    width: 305px;; 
+    height: 196px;
+    overflow: hidden;
+
+    }
+
+    img:hover {
+        border-width: 2px;
+        border-style: solid;
+        border-color:blue;
+      }
+p {
+    color: black;
+    display: grid;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 5px;
+   
+    
+     }
+
+     p:hover {
+        border-width: 2px;
+        border-style: solid;
+        border-color:blue;
+
+     }
+ }
+
+     .opacidad{
+        opacity: 30%;
+            
+     }
+
+     @media (max-width: 1000px) {
+        #gañeria{
+            grid-template-columns: 1fr;
+        }
+     }

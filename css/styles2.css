@@ -1,0 +1,142 @@
+/*seccion dos para el carrusel*/
+
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url("../fonts/Brandon_Grotesque_regular.otf") format("woff")
+  }
+
+#wwGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 5%;
+   
+
+}
+#carrusel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 99%;
+    height: 550px;
+    margin-top: 70px;
+    /*margin-bottom: 10%;*/
+    
+}
+.paisciudad{
+    position: relative;
+    top: -119px;
+    height: 142px;
+    margin-left: 79px;
+    
+    /*margin: 15px;*/
+}
+
+.pais{
+    
+    /*line-height: 45px;*/
+}
+
+.ciudad{
+
+    font-size: 20px;
+    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 45px;
+
+}
+
+.ultimo{
+    font-size: 20px;
+    color: #000000;
+    background-color:white;
+    
+    
+}
+
+.tamaños{
+   /*max-width: 95%;*/
+    height: 550px;
+}
+
+img:hover {
+    border-width: 3px;
+    border-style: solid;
+    border-color:blue;
+  }
+
+.properties{
+    display: grid;
+    padding-right: 100px;
+
+    .butones{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: center;
+
+        .botonmedio{
+            background-color: transparent;
+            border-radius: 100px;
+            height: fit-content;
+            font-size: 30px;
+            padding: 15px;
+            
+      
+        }
+
+        .direction{
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            line-height: 45px;
+        }
+
+        .prev{
+            color:#b4b7b7
+        }
+
+        .next{
+            color:#DF991B
+        }
+    }
+
+    .textos{
+        font-size: 30px;
+        text-align: right;
+        
+        h2{
+            color:#DF991B;
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        .textotitulo{
+            color: #000000;
+            font-size: 80px;
+            line-height: 45px;
+            font-family: "Brandon Grotesque";
+
+        }
+
+        p{
+            font-size: 30px;
+            line-height: 45px;
+            text-align:right;
+            color: #000000;
+           
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+     #cafe{
+        display: none;
+     }
+     #wwGallery{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+}
